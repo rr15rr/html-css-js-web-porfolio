@@ -1,3 +1,19 @@
+/* Esta regla fuerza el tema claro incluso cuando el sistema usa tema oscuro */
+@media (prefers-color-scheme: dark) {
+    html {
+        color-scheme: light;
+    }
+    body, 
+    nav, 
+    section, 
+    footer,
+    .details-container,
+    .menu-links {
+        background-color: white;
+        color: black;
+    }
+}
+
 @media screen and (max-width: 1400px) {
     #profile {
         height: 83vh;
@@ -10,90 +26,116 @@
 
 @media screen and (max-width: 1200px) {
     #desktop-nav {
-    display: none;
+        display: none;
+        background-color: white;
     }
     #hamburger-nav {
-    display: flex;
+        display: flex;
+        background-color: white;
     }
     #experience,
     .experience-details-container {
-    margin-top: 2rem;
+        margin-top: 2rem;
     }
-    #profile, 
+    #profile,
     .section-container {
-    display: block;
+        display: block;
     }
     .arrow {
-    display: none;
+        display: none;
     }
-    section, 
+    section,
     .section-container {
-    height: fit-content;
+        height: fit-content;
+        background-color: white;
     }
     section {
-    margin: 0 5%;
+        margin: 0 5%;
     }
     .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
     }
     .about-containers {
-    margin-top: 0;
+        margin-top: 0;
     }
 }
 
 @media screen and (max-width: 600px) {
-    #contact, 
+    body {
+        background-color: white;
+        color: black;
+    }
+    #contact,
     footer {
-    height: 40vh;
+        height: 40vh;
+        background-color: white;
     }
     #profile {
-    height: 83vh;
-    margin-bottom: 0;
+        height: 83vh;
+        margin-bottom: 0;
+        background-color: white;
     }
     article {
-    font-size: 1rem;
+        font-size: 1rem;
     }
     footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
+        height: fit-content;
+        margin-bottom: 2rem;
+        background-color: white;
     }
     .about-containers,
     .contact-info-upper-container,
     .btn-container {
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     }
     .contact-info-container {
-    margin: 0;
+        margin: 0;
     }
     .contact-info-container p,
     .nav-links li a {
-    font-size: 1rem;
+        font-size: 1rem;
+        color: black;
     }
     .experience-sub-title {
-    font-size: 1.25rem;
+        font-size: 1.25rem;
+        color: rgb(85,85,85);
     }
     .logo {
-    font-size: 1.5rem;
+        font-size: 1.5rem;
+        color: black;
     }
     .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
     }
     .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
+        width: auto;
+        height: 46vw;
+        justify-content: center;
     }
     .section__text__p2 {
-    font-size: 1.25rem;
+        font-size: 1.25rem;
+        color: rgb(85,85,85);
     }
     .title {
-    font-size: 2rem;
+        font-size: 2rem;
+        color: black;
     }
     .text-container {
         text-align: justify;
+        color: rgb(85,85,85);
+    }
+    .hamburger-icon span {
+        background-color: black;
+    }
+    .details-container {
+        background-color: white;
+        color: black;
+    }
+    p {
+        color: rgb(85,85,85);
     }
 }
